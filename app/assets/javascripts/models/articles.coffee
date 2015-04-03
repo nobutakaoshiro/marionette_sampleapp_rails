@@ -1,7 +1,8 @@
-#= require models/article
+define [
+  'backbone'
+  'models/article'
+], (Backbone, Article) ->
 
-Article = @Article
-
-class @Articles extends Backbone.Collection
-  url: '/articles'
-  model: Article
+  class Articles extends Backbone.Collection
+    url: '/articles'
+    model: Article

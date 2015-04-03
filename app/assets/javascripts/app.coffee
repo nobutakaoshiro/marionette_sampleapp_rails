@@ -1,16 +1,17 @@
-#= require app_router
+define [
+  'marionette'
+  'app_router'
+], (Marionette, AppRouter) ->
 
-AppRouter = @AppRouter
+  class App extends Marionette.Application
+    regions:
+      appHeader: '#appHeader'
+      appBody:   '#appBody'
+      appFooter: '#appFooter'
 
-class @App extends Backbone.Marionette.Application
-  regions:
-    appHeader: '#appHeader'
-    appBody:   '#appBody'
-    appFooter: '#appFooter'
+    initialize: (options) ->
+      super(options)
+      @appRouter = new AppRouter app: @
+      Backbone.history.start()
 
-  initialize: (options) ->
-    super(options)
-    @appRouter = new AppRouter app: @
-    Backbone.history.start()
-
-  onStart: ->
+    onStart: ->

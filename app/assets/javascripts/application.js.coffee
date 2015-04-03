@@ -13,11 +13,3 @@
 #= require jquery
 #= require jquery_ujs
 #= require turbolinks
-#= require underscore
-#= require backbone
-#= require backbone.babysitter
-#= require backbone.wreqr
-#= require marionette
-#= require hamlcoffee
-#= require articles
-#= require_tree .

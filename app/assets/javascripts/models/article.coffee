@@ -1,2 +1,6 @@
-class @Article extends Backbone.Model
-  urlRoot: '/articles'
+define [
+  'backbone'
+], (Backbone) ->
+
+  class Article extends Backbone.Model
+    urlRoot: '/articles'

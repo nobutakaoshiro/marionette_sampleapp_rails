@@ -34,8 +34,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bower-rails'
 
-gem 'haml_coffee_assets', github: 'nobutakaoshiro/haml_coffee_assets'
+gem 'haml_coffee_assets', github: 'xronos-i-am/haml_coffee_assets'
 gem 'execjs'
+gem 'requirejs-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -47,4 +48,5 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
 

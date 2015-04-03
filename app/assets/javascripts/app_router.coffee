@@ -1,20 +1,20 @@
-#= require models/articles
-#= require views/articles_view
+define [
+  'marionette'
+  'models/articles'
+  'views/articles_view'
+], (Marionette, Articles, ArticlesView) ->
 
-Articles = @Articles
-ArticlesView = @ArticlesView
+  class AppRouter extends Marionette.AppRouter
 
-class @AppRouter extends Backbone.Marionette.AppRouter
+    initialize: (options) ->
+      @app = options.app
 
-  initialize: (options) ->
-    @app = options.app
+    routes:
+      "/articles(/)" : "showArticles"
+      "(/)" : "showArticles"
 
-  routes:
-    "/articles(/)" : "showArticles"
-    "(/)" : "showArticles"
-
-  showArticles: ->
-    @articles = new Articles
-    @articlesView = new ArticlesView collection: @articles
-    @app.appBody.show(@articlesView)
-    @articles.fetch()
+    showArticles: ->
+      @articles = new Articles
+      @articlesView = new ArticlesView collection: @articles
+      @app.appBody.show(@articlesView)
+      @articles.fetch()

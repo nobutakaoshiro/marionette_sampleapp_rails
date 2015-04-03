@@ -1,8 +1,9 @@
-#= require views/article_view
+define [
+  'marionette'
+  'views/article_view'
+], (Marionette, ArticleView) ->
 
-ArticleView = @ArticleView
-
-class @ArticlesView extends Backbone.Marionette.CollectionView
-  tagName: 'ul'
-  className: 'articles-view'
-  childView: ArticleView
+  class ArticlesView extends Marionette.CollectionView
+    tagName: 'ul'
+    className: 'articles-view'
+    childView: ArticleView
