@@ -1,1 +1,3 @@
 = "#{@id}: #{@title}: #{@content}"
+.actions
+  %a{data-action: 'delete'} 削除
