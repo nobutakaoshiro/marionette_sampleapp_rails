@@ -1,3 +1,14 @@
-= "#{@id}: #{@title}: #{@content}"
+.view-mode
+  = "#{@id}:"
+  %span= @title
+  :
+  %span= @content
+.edit-mode
+  = "#{@id}:"
+  %input.title{type: 'text', data-binding: 'title'}
+  %input.content{type: 'content', data-binding: 'content'}
+
 .actions
+  %a{data-action: 'update'} 更新
   %a{data-action: 'delete'} 削除
+

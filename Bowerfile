@@ -5,3 +5,4 @@
 asset 'underscore', '1.6.0'
 asset 'backbone', '1.1.2'
 asset 'marionette', '2.4.1'
+asset 'backbone.stickit', '0.9.0'

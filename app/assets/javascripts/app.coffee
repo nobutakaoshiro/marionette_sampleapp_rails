@@ -1,6 +1,7 @@
 define [
   'marionette'
   'app_router'
+  'backbone.stickit'
 ], (Marionette, AppRouter) ->
 
   class App extends Marionette.Application
