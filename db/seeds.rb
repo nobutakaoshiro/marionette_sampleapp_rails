@@ -9,11 +9,11 @@
 
 if Article.count == 0
   Article.create([
-    {title: 'たいとる1', content: 'ほげほげ1'},
-    {title: 'たいとる2', content: 'ほげほげ2'},
-    {title: 'たいとる3', content: 'ほげほげ3'},
-    {title: 'たいとる4', content: 'ほげほげ4'},
-    {title: 'たいとる5', content: 'ほげほげ5'},
-    {title: 'たいとる6', content: 'ほげほげ6'},
+    {title: 'Title 1', content: '1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+    {title: 'Title 2', content: '2: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+    {title: 'Title 3', content: '3: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+    {title: 'Title 4', content: '4: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+    {title: 'Title 5', content: '5: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+    {title: 'Title 6', content: '6: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
   ])
 end

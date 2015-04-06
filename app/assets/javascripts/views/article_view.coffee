@@ -26,5 +26,5 @@ define [
         success: =>
           @render()
         error: =>
-          alert "エラー！"
+          alert "Error!"
 
